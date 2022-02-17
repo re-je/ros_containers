@@ -2,7 +2,7 @@
 #  podman build --rm --format docker -f Dockerfile -t re-je/ros-noetic-hooke .
 #
 # Usage:
-#  podman pull re-je/ros-noetic-hooke
+#  docker pull ghcr.io/re-je/ros-noetic-hooke:main
 
 FROM docker.io/gramaziokohler/ros-noetic-moveit
 LABEL maintainer "Gary Edwards <gary@re.je>"
