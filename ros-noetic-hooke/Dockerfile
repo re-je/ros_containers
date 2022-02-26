@@ -17,7 +17,7 @@ RUN echo "Building Kuka MoveIt Configs" \
     && apt-get update && apt-get -y upgrade \
     # KUKA packages
     && git clone https://github.com/ros-industrial/kuka_experimental.git \
-    && git clone https://github.com/re-je/kuka_kr150_2_moveit_config.git \
+    && git clone -b noetic-devel https://github.com/re-je/kuka_kr150_2_moveit_config.git \
     # Install dependencies
     && cd $CATKIN_WS \
     && rosdep install -y --from-paths . --ignore-src --rosdistro ${ROS_DISTRO} \
